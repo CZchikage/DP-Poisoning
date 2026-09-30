@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Test MSE on transformed labels, means over five splits. Private MSE is the exact noise expectation.}
+\label{tab:utility}
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{llcccccc}
+\toprule
+ & & & & \multicolumn{4}{c}{Private, $\mu=$} \\
+\cmidrule(lr){5-8}
+Design & Noise & Nonpr. & Const. & 0.25 & 0.5 & 1 & 2 \\
+\midrule
+Wine & Out. & .0045 & .0069 & .0203 & .0085 & .0055 & .0047 \\
+ & Obj. & .0045 & .0069 & .0360 & .0124 & .0065 & .0050 \\
+Calif. & Out. & .0196 & .0532 & .0230 & .0204 & .0198 & .0196 \\
+ & Obj. & .0196 & .0532 & .0228 & .0204 & .0198 & .0196 \\
+\bottomrule
+\end{tabular}
+\end{table}

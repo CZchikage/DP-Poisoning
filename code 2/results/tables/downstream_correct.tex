@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Percentage of test points that are both correctly classified by the majority decision and certified (group privacy / ours), direct tradeoff conversion, $\mu=1$.}
+\label{tab:downstream-correct}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lllcccc}
+\toprule
+Design & Attack & Noise & $k=1$ & $k=2$ & $k=4$ & $k=8$ \\
+\midrule
+Wine & Full & Out. & 64/71 & 43/61 & 6/41 & 0/13 \\
+ &  & Obj. & 57/69 & 23/58 & 0/33 & 0/7 \\
+ & Restr. & Out. & 82/82 & 81/81 & 77/78 & 69/72 \\
+ &  & Obj. & 82/82 & 79/80 & 74/76 & 64/71 \\
+\midrule
+Calif. & Full & Out. & 77/78 & 74/76 & 66/72 & 51/69 \\
+ &  & Obj. & 77/78 & 74/75 & 67/70 & 51/67 \\
+ & Restr. & Out. & 80/80 & 80/80 & 79/79 & 78/79 \\
+ &  & Obj. & 80/80 & 80/80 & 79/79 & 78/79 \\
+\bottomrule
+\end{tabular}
+\end{table}

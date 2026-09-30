@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Percentage of test points whose majority above-threshold decision is certified against every admissible $k$-label attack at $\mu=1$ (group privacy / ours), using the direct Gaussian tradeoff conversion. Majority-decision accuracy is $83.9\%$ on Wine and $80.4\%$ on California housing. Means over five splits.}
+\label{tab:downstream}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lllcccc}
+\toprule
+Design & Attack & Noise & $k=1$ & $k=2$ & $k=4$ & $k=8$ \\
+\midrule
+Wine & Full & Out. & 69/78 & 44/64 & 6/42 & 0/13 \\
+ &  & Obj. & 60/74 & 23/60 & 0/33 & 0/7 \\
+ & Restr. & Out. & 97/97 & 94/95 & 87/89 & 75/80 \\
+ &  & Obj. & 96/96 & 91/93 & 82/87 & 67/77 \\
+\midrule
+Calif. & Full & Out. & 94/96 & 88/91 & 76/85 & 55/80 \\
+ &  & Obj. & 94/95 & 88/90 & 77/82 & 56/78 \\
+ & Restr. & Out. & 100/100 & 99/99 & 98/98 & 95/97 \\
+ &  & Obj. & 99/99 & 99/99 & 98/98 & 95/97 \\
+\bottomrule
+\end{tabular}
+\end{table}

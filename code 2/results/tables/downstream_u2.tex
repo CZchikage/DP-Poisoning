@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Downstream ablation: certified percentage with the displacement cap $U_0$ (group privacy), $U_2$ (heterogeneous magnitudes and label reach), and $U_3$ (with geometry), shown as $U_0/U_2/U_3$; direct tradeoff conversion, $\mu=1$, means over five splits.}
+\label{tab:downstream-u2}
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{lllcccc}
+\toprule
+Design & Attack & Noise & $k=1$ & $k=2$ & $k=4$ & $k=8$ \\
+\midrule
+Wine & Full & Out. & 69/78/78 & 44/61/64 & 6/35/42 & 0/1/13 \\
+ &  & Obj. & 60/74/74 & 23/58/60 & 0/25/33 & 0/2/7 \\
+ & Restr. & Out. & 97/97/97 & 94/94/95 & 87/88/89 & 75/77/80 \\
+ &  & Obj. & 96/96/96 & 91/92/93 & 82/86/87 & 67/74/77 \\
+\midrule
+Calif. & Full & Out. & 94/96/96 & 88/91/91 & 76/83/85 & 55/73/80 \\
+ &  & Obj. & 94/95/95 & 88/90/90 & 77/82/82 & 56/73/78 \\
+ & Restr. & Out. & 100/100/100 & 99/99/99 & 98/98/98 & 95/97/97 \\
+ &  & Obj. & 99/99/99 & 99/99/99 & 98/98/98 & 95/97/97 \\
+\bottomrule
+\end{tabular}
+\end{table}
