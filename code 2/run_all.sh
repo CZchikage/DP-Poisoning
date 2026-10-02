@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# Reproduces all figures and tables. Total runtime is about 15 minutes on one CPU core.
+# Reproduces the artifact-covered figures and tables. Runtime is about 15 minutes on one CPU core.
 set -e
 cd "$(dirname "$0")"
 export OPENBLAS_NUM_THREADS=1

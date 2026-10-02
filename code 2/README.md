@@ -1,6 +1,8 @@
 # Cross-record geometry of multi-record poisoning robustness: experiments
 
-Code and data for all figures and tables in the paper.
+Code and data for Figs. 1, 2, and 4-6 and Tables III-IX in the paper.
+The finite-sample reference-path diagnostic in Fig. 3 is not included in this
+artifact.
 
 ## Requirements
 

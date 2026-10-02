@@ -390,7 +390,7 @@ attained by the fully aligned mean path.  The generic triangle bound is
 Reproduce from the project root with:
 
 ```bash
-python3 work/gaussian_path_experiment/run_gaussian_path.py
+python3 simulations/gaussian_paths.py
 ```
 """
     path.write_text(content)

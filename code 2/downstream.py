@@ -9,6 +9,7 @@ a = U3, and also report the TV conversion |p(z) - 1/2| > 2 Phi(a/2) - 1.
 """
 import csv
 import resource
+import sys
 import time
 
 import numpy as np
@@ -60,8 +61,9 @@ def main():
             writer = csv.DictWriter(f, fieldnames=list(data[0]))
             writer.writeheader()
             writer.writerows(data)
-    peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024
-    print(f"peak resident memory: {peak:.0f} MB")
+    peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+    peak_mb = peak / (1024 ** 2) if sys.platform == "darwin" else peak / 1024
+    print(f"peak resident memory: {peak_mb:.0f} MB")
 
 
 if __name__ == "__main__":
